@@ -1,22 +1,19 @@
-class bank:
-    def __init__(self,acnt,nam,typ,amt):
-        self.ac=acnt
-        self.name=nam
-        self.type=typ
-        self.amount=amt
-    def printamt(self):
-        print("acc name:",self.name)
-        print("acc no:",self.ac)
-        print("acc type:",self.type)
-        print("amount:",self.amount)
-    def withdraw(self,w1):
-        return(self.amount-w1)
-n=input("enter your name:")
-t=input("enter the acc type:")
-a=int(input("enter the acc no:"))
-am=int(input("enter the amount:"))
-obj=bank(a,n,t,am)
-print("account details")
-obj.printamt()
-w=int(input("enter amount to withdraw:"))
-print("balance=",obj.withdraw(w))
+class time:
+    def __init__(self,h,m,s):
+        self.hr=h
+        self.min=m
+        self.sec=s
+    def __add__(self,other):
+        tempsec=self.sec+other.sec
+        tempmin=tempsec/60
+        self.sec=int(tempsec%60)
+        self.min=self.min+other.min+tempmin
+        temphr=self.min/60
+        self.min=int(self.min%60)
+        self.hr=int(self.hr+other.hr+temphr)
+        return time(self.hr,self.min,self.sec)
+    def __str__(self):
+        return str(self.hr)+'hr '+str(self.min)+'min '+str(self.sec)+'sec'
+t1=time(5,60,4)
+t2=time(2,4,4)
+print(t1+t2)

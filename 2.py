@@ -1,24 +1,21 @@
-print("Output for a:\n")
-list1= [11,21,102,-29]
-for i in list1:
-    if i>0:
-        print(i)
-print("Output for b:\n")
-list2=[]
-n=int(input("Enter the number of elements:"))
-for i in range (0,n):
-    list2.append(int(input()))
-print(list2)
-print("Squares are:")
-for i in list2:
+list=[1,-1,5,-9,6,4,3,2,1,-7,0,-11,11,78,-10]
+print(list)
+for i in list:
+  if (i>0):
+   print(i)
+list=[]
+n=int(input("enter the no.of elements:"))
+for i in range(0, n):
+    list.append(int(input()))
+print(list)
+print("squares are:")
+for i in list:
     print(i*i)
-print("Output for c:\n")
-string=("Geeks for Geeks")
-vowels="AaEeIiOoUu"
-final=[i for i in string if i in vowels]
+string = "Geeks for Geeks"
+vowels = "AaEeIiOoUu"
+final = [each for each in string if each in vowels]
 print(len(final))
 print(final)
-print("Output for d:\n")
-string2=['g','s','f','h']
-for char in string2:
+string1 = ['a','h','j','u','e']
+for char in string1:
     print(char,'-',ord(char))

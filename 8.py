@@ -1,6 +1,4 @@
-string=str(input("enter the string"))
-print("the string is: ",string)
-start=string[0]
-end=string[-1]
-result=end+string[1:-1]+start
-print("the result is :",result)
+from math import pi
+r=float(input("enter the radius:"))
+area=float(pi*r*r)
+print("the area of the circle is",area)

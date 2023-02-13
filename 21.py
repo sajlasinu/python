@@ -1,12 +1,16 @@
-n=int(input("enter the number of terms:"))
-f1=0
-f2=1
-f3=f1+f2
-print("Fibonacci series of first",n,"terms")
-print(f1)
-print(f2)
-for i in range(3,n+1):
-    print(f3)
-    f1=f2
-    f2=f3
-    f3=f1+f2
+nterms = int(input("How many terms? "))
+n1, n2 = 0, 1
+count = 0
+if nterms <= 0:
+   print("Please enter a positive integer")
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1

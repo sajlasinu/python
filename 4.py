@@ -1,9 +1,12 @@
 list=[]
-n=int (input("Enter the number of elements :"))
+list1=[]
+n=int(input("enter the numbers:"))
 for i in range(0,n):
-    list.append (int(input()))
-print("list is :",list)
-for i in range (0,n):
-    if list [i]>100:
-       list [i]='over'
-print("result list is :",list)
+    list.append(int(input()))
+print(list)
+for i in list:
+    if i > 100:
+        list1.append("over")
+    else:
+        list1.append(i)       
+print(list1)

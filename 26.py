@@ -1,7 +1,13 @@
-s=input("Enter a string:")
-if s[-3:]=='ing':
-    s+='ly'
-    print(s)
+
+a=str(input("enter a string:"))
+b="ing"
+c="ly"
+print(a)
+if (a[-3:]!="ing"):
+    a+b
+    print(a+b)
+elif(a[-3:]=="ing"):
+    a+c
+    print(a+c)
 else:
-    s+='ing'
-    print(s)
+    print(a)

@@ -1,3 +1,8 @@
-color_list= [(x) for x in input("Enter multiple values\n").split(',')]
-print("/nThe values of input are" ,color_list)
-print( "%s %s"%(color_list[0],color_list[-1]))
+a=int(input("enter a number:"))
+n1 = int("%d" % a)
+n2 = int("%d%d" % (a,a))
+n3 = int("%d%d%d" %(a,a,a))
+print(n1)
+print(n2)
+print(n3)
+print ("the sum is",n1+n2+n3)

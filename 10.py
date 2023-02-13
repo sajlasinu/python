@@ -1,9 +1,4 @@
-a=int(input("Enter first number:"))
-b=int(input("Enter second number:"))
-c=int(input("Enter third number:"))
-if(a>b) and (a>c):
-    print("a is greater than b and c ")
-elif(b>a) and (b>c):
-          print("b is greater than a and c")
-else:
-    print("c is greater than a and b")
+
+filename = input("Input the Filename: ")
+f_extns = filename.split(".")
+print ("The extension of the file is : " + repr(f_extns[-1]))
